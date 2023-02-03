@@ -22,6 +22,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.core.view.WindowCompat
 import co.rikin.animatedicons.ui.ButtonWithLabel
+import co.rikin.animatedicons.ui.CustomTrashButton
 import co.rikin.animatedicons.ui.LottieCelebrationButton
 import co.rikin.animatedicons.ui.LottieCelebrationColoredButton
 import co.rikin.animatedicons.ui.LottieEyeButton
@@ -68,6 +69,9 @@ fun ButtonComparison() {
       horizontalArrangement = Arrangement.SpaceEvenly,
       verticalAlignment = Alignment.CenterVertically
     ) {
+      ButtonWithLabel(label = "Android") {
+        CustomTrashButton()
+      }
       ButtonWithLabel(label = "Lottie") {
         LottieTrashButton()
       }
@@ -75,7 +79,6 @@ fun ButtonComparison() {
         RiveTrashButton()
       }
     }
-
   }
 }
 

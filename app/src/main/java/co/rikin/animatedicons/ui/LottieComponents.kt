@@ -13,6 +13,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.toArgb
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import co.rikin.animatedicons.R
 import co.rikin.animatedicons.ui.theme.Eggshell
@@ -29,6 +30,7 @@ import com.airbnb.lottie.compose.rememberLottieDynamicProperties
 import com.airbnb.lottie.compose.rememberLottieDynamicProperty
 import kotlinx.coroutines.launch
 
+@Preview
 @Composable
 fun LottieTrashButton() {
   val composition = rememberLottieComposition(
@@ -79,6 +81,7 @@ fun LottieTrashButton() {
   }
 }
 
+@Preview
 @Composable
 fun LottieCelebrationButton() {
   val composition = rememberLottieComposition(
@@ -123,6 +126,7 @@ fun LottieCelebrationButton() {
   }
 }
 
+@Preview
 @Composable
 fun LottieWifiButton() {
   val composition = rememberLottieComposition(
@@ -180,6 +184,7 @@ fun LottieWifiButton() {
   }
 }
 
+@Preview
 @Composable
 fun LottieNotificationButton() {
   val composition = rememberLottieComposition(
@@ -224,6 +229,7 @@ fun LottieNotificationButton() {
   }
 }
 
+@Preview
 @Composable
 fun LottiePlantButton() {
   val composition = rememberLottieComposition(
@@ -268,6 +274,7 @@ fun LottiePlantButton() {
   }
 }
 
+@Preview
 @Composable
 fun LottieCelebrationColoredButton() {
   val composition = rememberLottieComposition(
@@ -312,6 +319,7 @@ fun LottieCelebrationColoredButton() {
   }
 }
 
+@Preview
 @Composable
 fun LottieMonsterButton() {
   val composition = rememberLottieComposition(
@@ -356,6 +364,7 @@ fun LottieMonsterButton() {
   }
 }
 
+@Preview
 @Composable
 fun LottieEyeButton() {
   val composition = rememberLottieComposition(
