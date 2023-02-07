@@ -28,9 +28,6 @@ import kotlinx.coroutines.launch
 @Composable
 fun IconButton() {
   val icon = Icons.Rounded.Delete
-  val scope = rememberCoroutineScope()
-  val rotation = remember { Animatable(0f) }
-
   Box(
     modifier = Modifier
       .size(60.dp)
@@ -39,23 +36,11 @@ fun IconButton() {
         shape = RoundedCornerShape(16.dp)
       )
       .clip(RoundedCornerShape(16.dp))
-      .clickable {
-        scope.launch {
-          rotation.animateTo(0f, keyframes {
-            durationMillis = 750
-            10f at 150
-            -10f at 300
-            5f at 450
-            -5f at 600
-          })
-        }
-      },
+      .clickable {},
     contentAlignment = Alignment.Center
   ) {
     Image(
-      modifier = Modifier
-        .size(24.dp)
-        .graphicsLayer { rotationZ = rotation.value },
+      modifier = Modifier.size(24.dp),
       imageVector = icon,
       contentDescription = "Trash",
       colorFilter = ColorFilter.tint(Color.White)
