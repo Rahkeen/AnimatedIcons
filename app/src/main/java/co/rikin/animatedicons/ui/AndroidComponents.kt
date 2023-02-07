@@ -10,6 +10,9 @@ import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.wrapContentSize
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -35,6 +38,7 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.graphics.vector.rememberVectorPainter
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import co.rikin.animatedicons.ui.theme.AnimatedIconsTheme
 import co.rikin.animatedicons.ui.theme.TerraCotta
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
@@ -212,5 +216,24 @@ fun CustomTrashButton() {
       modifier = Modifier.size(24.dp),
       contentDescription = "Delete",
     )
+  }
+}
+
+@Preview
+@Composable
+fun HandDrawnButtons() {
+  AnimatedIconsTheme {
+    Column(
+      modifier = Modifier
+        .fillMaxSize()
+        .background(Color.White),
+      verticalArrangement = Arrangement.spacedBy(8.dp, Alignment.CenterVertically)
+    ) {
+      Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceAround) {
+        CustomTrashButton()
+        CustomTrashButton()
+        CustomTrashButton()
+      }
+    }
   }
 }
