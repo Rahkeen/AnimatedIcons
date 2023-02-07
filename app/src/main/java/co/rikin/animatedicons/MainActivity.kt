@@ -82,35 +82,6 @@ fun ButtonComparison() {
   }
 }
 
-@Composable
-fun LottieButtons() {
-  Column(
-    modifier = Modifier.fillMaxSize(),
-    verticalArrangement = Arrangement.spacedBy(16.dp, Alignment.CenterVertically),
-    horizontalAlignment = Alignment.CenterHorizontally
-  ) {
-    Row(
-      modifier = Modifier.fillMaxWidth(),
-      horizontalArrangement = Arrangement.spacedBy(8.dp, Alignment.CenterHorizontally),
-      verticalAlignment = Alignment.CenterVertically
-    ) {
-      LottieTrashButton()
-      LottieCelebrationButton()
-      LottieWifiButton()
-      LottieNotificationButton()
-    }
-    Row(
-      modifier = Modifier.fillMaxWidth(),
-      horizontalArrangement = Arrangement.spacedBy(8.dp, Alignment.CenterHorizontally),
-      verticalAlignment = Alignment.CenterVertically
-    ) {
-      LottiePlantButton()
-      LottieCelebrationColoredButton()
-      LottieMonsterButton()
-      LottieEyeButton()
-    }
-  }
-}
 
 
 @Preview(showBackground = true)

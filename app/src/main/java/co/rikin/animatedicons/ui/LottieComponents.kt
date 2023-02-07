@@ -2,7 +2,12 @@ package co.rikin.animatedicons.ui
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.runtime.Composable
@@ -16,6 +21,7 @@ import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import co.rikin.animatedicons.R
+import co.rikin.animatedicons.ui.theme.AnimatedIconsTheme
 import co.rikin.animatedicons.ui.theme.Eggshell
 import co.rikin.animatedicons.ui.theme.GreenSheen
 import co.rikin.animatedicons.ui.theme.Independence
@@ -406,5 +412,38 @@ fun LottieEyeButton() {
       composition = composition.value,
       progress = { progress.value }
     )
+  }
+}
+
+@Preview
+@Composable
+fun LottieButtons() {
+  AnimatedIconsTheme {
+    Column(
+      modifier = Modifier.fillMaxSize().background(Color.White),
+      verticalArrangement = Arrangement.spacedBy(16.dp, Alignment.CenterVertically),
+      horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+      Row(
+        modifier = Modifier.fillMaxWidth(),
+        horizontalArrangement = Arrangement.spacedBy(8.dp, Alignment.CenterHorizontally),
+        verticalAlignment = Alignment.CenterVertically
+      ) {
+        LottieTrashButton()
+        LottieCelebrationButton()
+        LottieWifiButton()
+        LottieNotificationButton()
+      }
+      Row(
+        modifier = Modifier.fillMaxWidth(),
+        horizontalArrangement = Arrangement.spacedBy(8.dp, Alignment.CenterHorizontally),
+        verticalAlignment = Alignment.CenterVertically
+      ) {
+        LottiePlantButton()
+        LottieCelebrationColoredButton()
+        LottieMonsterButton()
+        LottieEyeButton()
+      }
+    }
   }
 }
