@@ -1,4 +1,4 @@
-package co.rikin.animatedicons.ui
+package co.rikin.animatedicons.ui.components
 
 import androidx.compose.animation.core.Animatable
 import androidx.compose.animation.core.LinearEasing

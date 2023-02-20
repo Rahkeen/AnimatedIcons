@@ -13,25 +13,16 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.statusBars
 import androidx.compose.foundation.layout.windowInsetsPadding
-import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.compose.ui.unit.dp
 import androidx.core.view.WindowCompat
-import co.rikin.animatedicons.ui.ButtonWithLabel
-import co.rikin.animatedicons.ui.CustomTrashButton
-import co.rikin.animatedicons.ui.LottieCelebrationButton
-import co.rikin.animatedicons.ui.LottieCelebrationColoredButton
-import co.rikin.animatedicons.ui.LottieEyeButton
-import co.rikin.animatedicons.ui.LottieMonsterButton
-import co.rikin.animatedicons.ui.LottieNotificationButton
-import co.rikin.animatedicons.ui.LottiePlantButton
-import co.rikin.animatedicons.ui.LottieTrashButton
-import co.rikin.animatedicons.ui.LottieWifiButton
-import co.rikin.animatedicons.ui.RiveTrashButton
+import co.rikin.animatedicons.ui.components.ButtonWithLabel
+import co.rikin.animatedicons.ui.components.CustomTrashButton
+import co.rikin.animatedicons.ui.components.LottieTrashButton
+import co.rikin.animatedicons.ui.components.RiveTrashButton
 import co.rikin.animatedicons.ui.theme.AnimatedIconsTheme
 
 class MainActivity : ComponentActivity() {
