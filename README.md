@@ -14,6 +14,6 @@ There are two main directories:
 - '/components' : has some components built with each approach with runnable previews
 
 ### Resources
-👑 [Lordicon](https://lordicon.com/) - for amazing animated icons
-🗂 [Lottiefiles](https://lottiefiles.com/) - for animated resources and to edit Lottie animations
+- 👑 [Lordicon](https://lordicon.com/) - for amazing animated icons
+- 🗂 [Lottiefiles](https://lottiefiles.com/) - for animated resources and to edit Lottie animations
 
