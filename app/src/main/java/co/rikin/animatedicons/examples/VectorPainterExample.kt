@@ -33,7 +33,7 @@ import kotlinx.coroutines.launch
 
 @Preview
 @Composable
-fun BetterIcon() {
+private fun BetterIcon() {
   val icon = Icons.Rounded.Delete
 
   val scope = rememberCoroutineScope()
@@ -66,9 +66,7 @@ fun BetterIcon() {
 
 @Preview
 @Composable
-fun ManualIcon() {
-  val icon = Icons.Rounded.Delete
-
+private fun ManualIcon() {
   val lid = PathData {
     moveTo(18.0f, 4.0f)
     horizontalLineToRelative(-2.5f)

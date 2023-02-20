@@ -1,22 +1,14 @@
 package co.rikin.animatedicons.examples
 
-import android.util.Log
 import androidx.compose.animation.core.Animatable
-import androidx.compose.animation.core.LinearEasing
-import androidx.compose.animation.core.animateFloatAsState
-import androidx.compose.animation.core.tween
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.gestures.detectDragGestures
-import androidx.compose.foundation.gestures.detectTapGestures
-import androidx.compose.foundation.gestures.forEachGesture
 import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -30,9 +22,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.viewinterop.AndroidView
 import app.rive.runtime.kotlin.RiveAnimationView
-import app.rive.runtime.kotlin.RiveTextureView
 import co.rikin.animatedicons.R
-import co.rikin.animatedicons.ui.theme.AnimatedIconsTheme
 import co.rikin.animatedicons.ui.theme.Coffeeshop
 import co.rikin.animatedicons.ui.theme.TerraCotta
 import kotlinx.coroutines.delay
@@ -40,7 +30,7 @@ import kotlinx.coroutines.launch
 
 @Preview
 @Composable
-fun RiveTrashButton() {
+fun RiveIcon() {
   var clicked by remember {
     mutableStateOf(false)
   }
@@ -77,7 +67,7 @@ fun RiveTrashButton() {
 
 @Preview
 @Composable
-fun CoffeeLoaderExample() {
+fun CoffeeLoader() {
   val progress = remember {
     Animatable(0f)
   }
