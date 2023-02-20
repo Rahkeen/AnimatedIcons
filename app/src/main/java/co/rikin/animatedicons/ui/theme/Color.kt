@@ -9,6 +9,7 @@ val Teal200 = Color(0xFF03DAC5)
 
 val Eggshell = Color(0xFFF4F1DE)
 val EggshellDarker = Color(0xFFDBD192)
+val Coffeeshop = Color(0xFFEFE0C7)
 val TerraCotta = Color(0xFFE07A5F)
 val TerraCottaDarker = Color(0xFFD44E28)
 val Independence = Color(0xFF5C608A)
